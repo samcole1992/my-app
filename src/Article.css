@@ -1,0 +1,9 @@
+.article {
+  background-color: lightblue;
+  border: solid;
+  border-radius: 1px;
+  margin-bottom: 5px;
+  padding: 20px;
+  color: black;
+  cursor: pointer;
+}
