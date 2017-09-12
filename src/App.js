@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ArticleCollection from './ArticleCollection';
 import Option from './Option'
+import Search from './Search'
 
 class App extends Component {
   constructor(props){
@@ -17,6 +18,10 @@ handleGenreSelect(type){
   this.setState({genre:type})
   console.log(this.state.genre)
 }
+
+// submitSearch(event){
+//   this.setState({genre: event.target.})
+// }
 
   render() {
 
@@ -40,6 +45,7 @@ let index = this.props.options.indexOf(option)
         <div className="App-header">
         <ul className = "list">{options}</ul>
         </div>
+        <Search />
         <div>
         <ArticleCollection
           genre = {this.state.genre}

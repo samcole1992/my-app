@@ -20,7 +20,6 @@ class ArticleCollection extends Component {
   }
   componentWillMount(){
 
-    // http://api.nytimes.com/svc/search/v2/articlesearch.json?q=new+york+times&page=2&sort=oldest&api-key=####
     fetch(`http://api.nytimes.com/svc/search/v2/articlesearch.json?q=new+york+times&fq=news_desk:(${this.props.genre})&sort=newest&api-key=566e8cfd64b54d3090c52608feed19ed`,{
   })
   .then(response => {

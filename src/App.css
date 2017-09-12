@@ -9,14 +9,18 @@
 
 .App-header {
   background-color: #222;
-  height: 50px;
+  height: 70px;
   padding: 20px;
   color: white;
 }
 .list{
-  display: inline-flex;
+  display: -webkit-inline-box;
 }
 
+.searchForm{
+  padding: inherit;
+  display: -webkit-inline-box;
+}
 .App-intro {
   font-size: large;
 }
